@@ -1,0 +1,4 @@
+connection_name,product_uid,current_bandwidth_mbps
+Core-A-to-Core-B,00000000-0000-4000-8000-000000000001,10
+Core-C-to-Core-D,00000000-0000-4000-8000-000000000002,10
+Core-E-to-Core-F,00000000-0000-4000-8000-000000000003,10
