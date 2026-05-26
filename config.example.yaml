@@ -1,0 +1,28 @@
+database_path: data/demo_adjacency.db
+dry_run: true
+
+policy:
+  down_after_seconds: 300
+  stable_after_seconds: 900
+  baseline_bandwidth_mbps: 10
+
+links:
+  - name: Core-A-to-Core-B
+    link_group: A
+    upgrade_bandwidth_mbps: 8000
+    event_priority_upgrade: 3
+    event_priority_restore: 2
+  - name: Core-C-to-Core-D
+    link_group: B
+    upgrade_bandwidth_mbps: 1000
+    event_priority_upgrade: 3
+    event_priority_restore: 2
+  - name: Core-E-to-Core-F
+    link_group: C
+    upgrade_bandwidth_mbps: 1000
+    event_priority_upgrade: 3
+    event_priority_restore: 2
+
+opevents:
+  node: Megaport VXC
+  event_prefix: Rate limit changed
