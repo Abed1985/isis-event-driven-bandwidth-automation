@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-label="ISIS event-driven bandwidth automation topology">
+  <rect width="1400" height="900" fill="#f7f8fb"/>
+  <text x="700" y="60" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#1d2433">ISIS Event-Driven Bandwidth Automation</text>
+  <text x="700" y="96" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#526071">Demo topology using generic core links and Megaport VXC remediation</text>
+
+  <rect x="80" y="155" width="420" height="610" rx="18" fill="#ffffff" stroke="#d7dce5" stroke-width="2"/>
+  <text x="290" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#1d2433">Provider Core</text>
+  <text x="290" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#526071">ISIS adjacencies feed Opevents</text>
+
+  <rect x="145" y="285" width="120" height="62" rx="10" fill="#e8f3ff" stroke="#4a90d9" stroke-width="2"/>
+  <text x="205" y="322" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#15395b">Core-A</text>
+  <rect x="315" y="285" width="120" height="62" rx="10" fill="#e8f3ff" stroke="#4a90d9" stroke-width="2"/>
+  <text x="375" y="322" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#15395b">Core-B</text>
+  <line x1="265" y1="316" x2="315" y2="316" stroke="#23395d" stroke-width="4"/>
+  <text x="290" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#1d2433">Core-A-to-Core-B</text>
+  <text x="290" y="397" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#526071">Link group A, target 8000 Mbps</text>
+
+  <rect x="145" y="455" width="120" height="62" rx="10" fill="#fff4e6" stroke="#de8f2a" stroke-width="2"/>
+  <text x="205" y="492" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#5f360f">Core-C</text>
+  <rect x="315" y="455" width="120" height="62" rx="10" fill="#fff4e6" stroke="#de8f2a" stroke-width="2"/>
+  <text x="375" y="492" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#5f360f">Core-D</text>
+  <line x1="265" y1="486" x2="315" y2="486" stroke="#c44e36" stroke-width="4" stroke-dasharray="10 8"/>
+  <text x="290" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#1d2433">Core-C-to-Core-D</text>
+  <text x="290" y="567" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#526071">Link group B, target 1000 Mbps</text>
+
+  <rect x="145" y="625" width="120" height="62" rx="10" fill="#ebf8ef" stroke="#46a35c" stroke-width="2"/>
+  <text x="205" y="662" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#245a31">Core-E</text>
+  <rect x="315" y="625" width="120" height="62" rx="10" fill="#ebf8ef" stroke="#46a35c" stroke-width="2"/>
+  <text x="375" y="662" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#245a31">Core-F</text>
+  <line x1="265" y1="656" x2="315" y2="656" stroke="#2f6b3b" stroke-width="4"/>
+  <text x="290" y="715" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#1d2433">Core-E-to-Core-F</text>
+  <text x="290" y="737" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#526071">Link group C, target 1000 Mbps</text>
+
+  <rect x="570" y="190" width="300" height="86" rx="14" fill="#ffffff" stroke="#b9c3d2" stroke-width="2"/>
+  <text x="720" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#1d2433">Opevents</text>
+  <text x="720" y="252" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#526071">Receives ISIS up/down events</text>
+
+  <rect x="570" y="340" width="300" height="105" rx="14" fill="#ffffff" stroke="#b9c3d2" stroke-width="2"/>
+  <text x="720" y="376" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#1d2433">Automation Runner</text>
+  <text x="720" y="404" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#526071">update_isis_status.py</text>
+  <text x="720" y="427" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#526071">run_bandwidth_policy.py</text>
+
+  <rect x="570" y="505" width="300" height="92" rx="14" fill="#ffffff" stroke="#b9c3d2" stroke-width="2"/>
+  <text x="720" y="542" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#1d2433">SQLite State</text>
+  <text x="720" y="570" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#526071">Adjacency and VXC status</text>
+
+  <rect x="970" y="250" width="330" height="125" rx="16" fill="#ffffff" stroke="#b9c3d2" stroke-width="2"/>
+  <text x="1135" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#1d2433">Megaport API</text>
+  <text x="1135" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#526071">OAuth client credentials</text>
+  <text x="1135" y="344" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#526071">VXC rate-limit updates</text>
+
+  <rect x="970" y="480" width="330" height="132" rx="16" fill="#ffffff" stroke="#b9c3d2" stroke-width="2"/>
+  <text x="1135" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#1d2433">Remediation Policy</text>
+  <text x="1135" y="550" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#526071">Down for 5 min: upgrade</text>
+  <text x="1135" y="574" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#526071">Stable for 15 min: restore</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#526071"/>
+    </marker>
+  </defs>
+  <line x1="500" y1="315" x2="570" y2="225" stroke="#526071" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="500" y1="486" x2="570" y2="232" stroke="#526071" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="500" y1="655" x2="570" y2="240" stroke="#526071" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="720" y1="276" x2="720" y2="340" stroke="#526071" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="720" y1="445" x2="720" y2="505" stroke="#526071" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="870" y1="392" x2="970" y2="545" stroke="#526071" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="970" y1="312" x2="870" y2="392" stroke="#526071" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="970" y1="560" x2="870" y2="398" stroke="#526071" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <rect x="520" y="795" width="360" height="46" rx="10" fill="#eef2f7" stroke="#c9d1dc"/>
+  <text x="700" y="824" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#39465a">Default demo mode is dry-run: no live API or CLI changes</text>
+</svg>
