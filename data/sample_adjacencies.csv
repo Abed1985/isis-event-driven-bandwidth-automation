@@ -1,0 +1,7 @@
+node_name,node_neighbor,state,last_changed,link_group
+core-a,core-b,up,2024-01-01 10:00:00,A
+core-b,core-a,up,2024-01-01 10:00:00,A
+core-c,core-d,down,2024-01-01 09:50:00,B
+core-d,core-c,down,2024-01-01 09:50:00,B
+core-e,core-f,up,2024-01-01 10:00:00,C
+core-f,core-e,up,2024-01-01 10:00:00,C
