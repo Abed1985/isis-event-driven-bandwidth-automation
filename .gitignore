@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+venv-*/
+
+# Local secrets and runtime state
+.env
+*.db
+*.sqlite
+*.sqlite3
+*.log
+
+# Discovery notebooks/logs and generated artifacts
+*_API_DISCOVERY.txt
+*.bak
+.ipynb_checkpoints/
